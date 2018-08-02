@@ -3,16 +3,16 @@
 
 """
 
-AS3935-monitor.py: A monitoring script for the AS3935 lightning
+AS3935.py: A monitoring script for the AS3935 lightning
     sensor on the MOD-1016 v6 breakout board.  Requires both the
     RaspberryPi-AS3935 and RPi.GPIO Python modules.  Note that
     the reset function requires VCT fork of RaspberryPi-AS3935.
 
 simple invocation:
-    $ sudo python AS3935-monitor.py
+    $ sudo python AS3935.py
 
 error logging invocation:
-    $ sudo python -u AS3935-monitor.py > >(tee -a output.log) 2> >(tee error.log >&2)
+    $ sudo python -u AS3935.py > >(tee -a output.log) 2> >(tee error.log >&2)
 
 Licensed under the GNU General Public License (GPL) version 2 or greater.
 Copyright 2014 Vanguard Computer Technology Labs, Inc.
